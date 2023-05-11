@@ -1,0 +1,298 @@
+:root {
+  --dr: rgb(139, 0, 0);
+  --lp: rgb(198, 127, 127);
+  --wg: rgb(236, 236, 236);
+  --gg: rgb(108, 117, 126);
+}
+
+* {
+  font-family: 'Nova Square', cursive;
+}
+
+.row {
+  --bs-gutter-x: 0rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.txt-dr {
+  color: var(--dr);
+}
+
+.txt-lp {
+  color: var(--lp);
+}
+
+.txt-wg {
+  color: var(--wg);
+}
+
+.txt-gg {
+  color: var(--gg);
+}
+
+.bg-dr {
+  background-color: var(--dr);
+}
+
+.bg-lp {
+  background-color: var(--lp);
+}
+
+.bg-wg {
+  background-color: var(--wg);
+}
+
+.bg-gg {
+  background-color: var(--gg);
+}
+
+/* NAVBAR */
+
+/* HEADER */
+
+.header-bg {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 1) 0%,
+      rgba(198, 127, 127, 0.2) 100%
+    ),
+    url(./media/switzerland-862870_1920.jpg);
+  height: 1080px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.header-bg::before {
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  background-image: url(./media/mountains2.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+}
+
+.lorem {
+  position: absolute;
+  top: calc(40% - 20px);
+  left: calc(40% - 20px);
+}
+
+/* MAIN */
+
+.corpo1 {
+}
+
+.corpo1-txt {
+  position: relative;
+}
+
+.corpo1-txt::before {
+  content: open-quote;
+  color: var(--dr);
+  position: absolute;
+  transform: scale(2, 2);
+  font-size: 200%;
+  left: -5px;
+}
+
+.corpo1-txt::after {
+  content: close-quote;
+  color: var(--dr);
+  position: absolute;
+  transform: scale(2, 2);
+  font-size: 200%;
+  top: 100%;
+}
+
+/* Card1 */
+
+.line {
+  height: 4px;
+  width: 70%;
+  background-color: var(--dr);
+  border-radius: 10px;
+  opacity: 1;
+  position: relative;
+}
+
+.line::before {
+  content: '';
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: var(--wg);
+  border: 2px solid var(--dr);
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+}
+
+/* BUTTON */
+.btn {
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.btn-secondary {
+  background-color: var(--dr) !important;
+  color: var(--wg) !important;
+  border-radius: 0 !important;
+}
+
+/* WOODS1 */
+.btn-bg {
+  background-color: var(--wg);
+  height: 55vh;
+}
+.btn-pic {
+  background-image: url(./media/trees2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* TIMELINE */
+.timeline {
+  height: 60vh;
+}
+
+.timeline-list {
+  border-left: 4px solid var(--dr);
+  position: relative;
+  margin: 0px;
+}
+
+.timeline-list::before {
+  content: '';
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: var(--wg);
+  border: 2px solid var(--dr);
+  position: absolute;
+  top: calc(8% - 10px);
+  right: calc(100.5% - 10px);
+}
+
+/* WOODS2 */
+.woods2 {
+  background-image: url(./media/single.png);
+  background-position-x: right 300px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  background-size: 36%;
+}
+
+.timeline-list-elements-title {
+  list-style-type: none;
+}
+
+.timeline-list-elements {
+  list-style-type: none;
+  font-family: 'Rajdhani', sans-serif !important;
+}
+
+.timeline-list-elements-title {
+}
+
+/* OUR TEAM */
+
+.round-pic {
+  border: 4px solid var(--dr);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* FOOTER */
+
+.bg-tree-footer {
+  background-color: var(--wg);
+}
+
+.bg-tree {
+  width: 100%;
+}
+
+.footer-all {
+  background-color: var(--dr) !important;
+  position: relative;
+  bottom: 0px;
+}
+
+/* .footer-all::before{
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  background-image: url(./media/other.png);
+  background-position: center;
+  background-repeat: no-repeat ;
+  background-size: 100%;
+  position: absolute;
+  bottom: calc(200% - 25px);
+  left: 0px;
+  z-index: 1;
+} */
+
+.footer-list {
+  list-style-type: none;
+}
+
+.footer-list-elements {
+  color: var(--wg);
+  font-family: 'Nova Square', cursive !important;
+}
+
+.quick-link {
+  list-style-type: none;
+}
+
+.quick-link-items {
+  color: var(--wg);
+}

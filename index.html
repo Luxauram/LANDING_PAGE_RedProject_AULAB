@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Project Red</title>
+    <title>Project Red - LuxDev</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,72 +17,72 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaQ.css">
 </head>
 
 <body>
 
- <!-- Navbar -->
-<div class="container text-center">
+ <!-- Header -->
+<header class="container-fluid text-center mx-0 px-0">
         <div class="row">
             <div class="col-12 container-fluid mx-auto">
-                <a class="navbar-brand" href="./indexr.html">
-                    <img src="./media/logo.png" alt="Logo con Montagne" width="140" height="84">
+                <a class="navbar-brand" href="#">
+                    <img src="./media/logo.png" alt="Logo" width="140" height="84">
                 </a>
             </div>
         </div>
         <div class="row">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="col-12 navbar-nav justify-content-evenly">
                         <li class="nav-item">
-                            <a class="nav-link txt-gg" aria-current="page" href="./indexr.html">Home</a>
+                            <a class="nav-link txt-gg" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link txt-gg" href="./indexr.html">Secondo Link</a>
+                            <a class="nav-link txt-gg" href="#">Second Link</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  txt-gg" href="./indexr.html">Terzo Link</a>
+                            <a class="nav-link  txt-gg" href="#">Third Link</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  txt-gg" href="../Black/indexb.html">Mattia Cecchetto</a>
+                            <a class="nav-link  txt-gg" href="#">Fourth Link</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-</div>
-<!-- Navbar END-->
-
-<!-- Header -->
-<header class="container-fluid header-bg">
-    <div class="row align-items-center justify-content-center ">
-        <div class="col-12 d-flex align-items-center">
-            <h1 class="txt-dr display-1 lorem"><strong>L O R E M</strong></h1>
+    <!-- Hero Img-->
+    <div class="container-fluid header-bg ">
+        <div class="row align-items-center justify-content-center ">
+            <div class="col-12 d-flex align-items-center ">
+                <h1 class="txt-dr display-1 lorem ">
+                    <strong>L O R E M</strong>
+                </h1>
+            </div>
         </div>
     </div>
 </header>
-
-<!-- Header END -->
+<!-- Header END-->
 
 <!-- Main -->
 <main>
     <section class="bg-wg">
-        <!-- Corpo1 -->
-        <div class="row corpo1 justify-content-center ">
+        <!-- Text1 -->
+        <div class="row justify-content-center ">
             <div class=" col-5 justify-content-center">
-                <div class="corpo1-txt text-center my-5 h4 txt-gg">
+                <div class="first-div-txt text-center my-5 h4 txt-gg">
                     &nbsp;&nbsp;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum excepturi optio, delectus quidem odit adipisci eum commodi
                     autem voluptatibus aut molestias quo minima placeat ullam labore dicta aliquid asperiores recusandae? &nbsp;&nbsp;
                 </div>
             </div>
         </div>
-        <!-- Corpo1 END -->
+        <!-- Text1 END -->
 
         <!-- Card1 -->
         <section class="container my-5 py-5">
@@ -112,29 +112,31 @@
         </section>
         <!-- Card1 END -->
 
-        <!--  Corpo2 -->
-        <section class="container-fluid ">
-            <div class="row mx-1">
-                <div class="col-12 col-md-6">
+        <!--  Section2 -->
+        <section class="container-fluid px-5">
+            <div class="row mx-1 mx-5 px-3">
+                <div class="col-12 col-md-5">
                     <p class="h2 txt-dr">
                         <strong>Lorem ipsum dolor sit</strong>
                     </p>
                     <p class="txt-gg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, qui! Voluptatem, laudantium sunt sit natus accusamus saepe assumenda iure culpa et perspiciatis? Fugit nam earum, odit rerum rem explicabo esse.</p>
                     <p class="txt-gg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio autem quis nobis vel sed maiores placeat illo nisi accusantium maxime corrupti, rerum consequuntur architecto natus rem quasi tempora facilis!</p>
                 </div>
-                <div class="col-12 col-md-6 text-end">
+                <div class="col-md-2"></div>
+                <div class="col-12 col-md-5 text-md-end text-sm-center">
                     <p class="h2 txt-dr">
                         <strong>Lorem ipsum dolor sit</strong>
                     </p>
                     <p class="txt-gg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, qui! Voluptatem, laudantium sunt sit natus accusamus saepe assumenda iure culpa et perspiciatis? Fugit nam earum, odit rerum rem explicabo esse.</p>
                     <p class="txt-gg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio autem quis nobis vel sed maiores placeat illo nisi accusantium maxime corrupti, rerum consequuntur architecto natus rem quasi tempora facilis!</p>
                 </div>
+                
             </div>
         </section>
     </section>
-        <!-- Corpo2 END -->
+        <!-- Section2 END -->
 
-        <!-- Bottone -->
+        <!-- Lorem Button -->
         <div class="col-12 d-flex align-items-center justify-content-center btn-bg btn-pic">
             <button type="button" class="btn btn-secondary btn-lg ">
                 <span class="h4 my-1 mx-5">LOREM IPSUM</span>
@@ -144,12 +146,12 @@
                 <div class="angle4"></div>
             </button>
         </div>
-        <!-- Bottone END -->
+        <!-- Lorem Button END -->
 
 
 
     <!-- Timeline -->
-    <section class="timeline container-fluid pt-5 woods2">
+    <section class="timeline container-fluid pt-5 woods2 ps-5 ms-5 pb-5>
         <div class="row bg-hp text-hb py-3">
             <div class="col-12 col-md-6">
 
@@ -316,10 +318,10 @@
                     <div class="col-12 col-md-4 d-flex align-items-start">
                         <ul class="quick-link align-items-start">
                             <li class="quick-link-items quick-link my-2 h3">Quick Link</li>
-                            <li class="quick-link-items my-2">Quick Link</li>
-                            <li class="quick-link-items my-2">Quick Link</li>
-                            <li class="quick-link-items my-2">Quick Link</li>
-                            <li class="quick-link-items my-2">Quick Link</li>
+                            <li class="quick-link-items my-2">Lorem Link</li>
+                            <li class="quick-link-items my-2">Lorem Link</li>
+                            <li class="quick-link-items my-2">Lorem Link</li>
+                            <li class="quick-link-items my-2">Lorem Link</li>
                         </ul>
                     </div>
                 </div>

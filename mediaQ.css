@@ -1,0 +1,28 @@
+@media only screen and (min-width: 768px) {
+  html {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .lorem {
+    position: absolute;
+    top: calc(40% - 20px);
+    left: calc(35% - 20px);
+  }
+  .timeline {
+    height: 1000px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .lorem {
+    position: absolute;
+    top: calc(40% - 20px);
+    left: calc(30% - 20px);
+  }
+  .timeline {
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 100px;
+    height: 1150px;
+  }
+}
